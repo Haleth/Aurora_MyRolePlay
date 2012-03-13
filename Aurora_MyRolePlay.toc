@@ -1,0 +1,9 @@
+## Interface: 40300
+## Title: Aurora_MyRolePlay
+## Notes: MyRolePlay plugin for Aurora and FreeUI.
+## Author: Haleth/Freethinker
+## Version: 1.1a
+## RequiredDeps: MyRolePlay
+## OptionalDeps: FreeUI
+
+core.lua
