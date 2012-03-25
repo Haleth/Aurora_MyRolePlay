@@ -2,7 +2,7 @@
 ## Title: Aurora_MyRolePlay
 ## Notes: MyRolePlay plugin for Aurora and FreeUI.
 ## Author: Haleth/Freethinker
-## Version: 1.1a
+## Version: 1.2
 ## RequiredDeps: MyRolePlay
 ## OptionalDeps: FreeUI
 
