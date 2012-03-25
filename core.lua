@@ -1,6 +1,6 @@
 if not IsAddOnLoaded("FreeUI") and not IsAddOnLoaded("Aurora") then return end
 
-local F, C = unpack(Aurora or FreeUI)
+local F = unpack(Aurora or FreeUI)
 
 hooksecurefunc(mrp, "CreateBrowseFrame", function()
 	local bg = CreateFrame("Frame", nil, MyRolePlayBrowseFrame)
