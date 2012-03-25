@@ -26,13 +26,6 @@ hooksecurefunc(mrp, "CreateBrowseFrame", function()
 	F.ReskinClose(MyRolePlayBrowseFrameCloseButton)
 	F.ReskinScroll(MyRolePlayBrowseFrameAScrollFrameScrollBar)
 	F.ReskinScroll(MyRolePlayBrowseFrameBScrollFrameScrollBar)
-
-	select(2, MyRolePlayBrowseFrameAScrollFrameScrollBar:GetRegions()):Hide()
-	select(2, MyRolePlayBrowseFrameBScrollFrameScrollBar:GetRegions()):Hide()
-	MyRolePlayBrowseFrameAScrollFrameScrollBarThumbTexture:Hide()
-	MyRolePlayBrowseFrameBScrollFrameScrollBarThumbTexture:Hide()
-	MyRolePlayBrowseFrameAScrollFrameScrollBarThumbTexture.bg:Hide()
-	MyRolePlayBrowseFrameBScrollFrameScrollBarThumbTexture.bg:Hide()
 end)
 
 hooksecurefunc(mrp, "AddMRPTab", function()
