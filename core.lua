@@ -1,6 +1,6 @@
 if not IsAddOnLoaded("FreeUI") and not IsAddOnLoaded("Aurora") then return end
 
-local F = unpack(Aurora or FreeUI)
+local F, C = unpack(Aurora or FreeUI)
 
 hooksecurefunc(mrp, "CreateBrowseFrame", function()
 	local bg = CreateFrame("Frame", nil, MyRolePlayBrowseFrame)
@@ -109,3 +109,26 @@ hooksecurefunc(mrp, "CreateOptionsPanel", function()
 	F.ReskinDropDown(MyRolePlayOptionsPanel_HeightUnit)
 	F.ReskinDropDown(MyRolePlayOptionsPanel_WeightUnit)
 end)
+
+local function reskinHeader(c, field)
+	for i = 1, field:GetNumChildren() do
+		local f = select(i, field:GetChildren())
+		if not f.reskinned then
+			F.CreateBD(f.h, 0)
+			f.h.SetBackdrop = F.dummy
+
+			F.CreateGradient(f.h)
+
+			f.h.fs:SetPoint("TOPLEFT", f.h, "TOPLEFT", 0, 1)
+
+			if f.sep then
+				f.sep:SetAlpha(0)
+			end
+
+			f.reskinned = true
+		end
+	end
+end
+
+hooksecurefunc(mrp, "CreateCFpfield", reskinHeader)
+hooksecurefunc(mrp, "CreateBFpfield", reskinHeader)
