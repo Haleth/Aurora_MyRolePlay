@@ -65,7 +65,7 @@ hooksecurefunc(mrp, "CreateEditFrames", function()
 			select(i, frame:GetRegions()):SetAlpha(0)
 		end
 
-				
+
 		local down = _G[f.."_Button"] or _G[f.."Button"]
 		down:SetSize(20, 20)
 		down:ClearAllPoints()
