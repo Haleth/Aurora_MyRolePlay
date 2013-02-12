@@ -18,8 +18,8 @@ hooksecurefunc(mrp, "CreateBrowseFrame", function()
 	MyRolePlayBrowseFrameInset:DisableDrawLayer("BORDER")
 	MyRolePlayBrowseFrameInsetBg:Hide()
 
-	F.CreateTab(MyRolePlayBrowseFrameTab1)
-	F.CreateTab(MyRolePlayBrowseFrameTab2)
+	F.ReskinTab(MyRolePlayBrowseFrameTab1)
+	F.ReskinTab(MyRolePlayBrowseFrameTab2)
 
 	MyRolePlayBrowseFramePortrait:Hide()
 
@@ -29,7 +29,7 @@ hooksecurefunc(mrp, "CreateBrowseFrame", function()
 end)
 
 hooksecurefunc(mrp, "AddMRPTab", function()
-	F.CreateTab(CharacterFrameTab5)
+	F.ReskinTab(CharacterFrameTab5)
 	CharacterFrameTab5:SetText("Profile")
 end)
 
