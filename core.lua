@@ -167,3 +167,27 @@ end
 function mrp:UnhookChatName()
 	GetColoredName = mrp_Prehook_GetColoredName
 end
+
+hooksecurefunc(mrp, "CreateMRPButton", function()
+	local MyRolePlayButton = MyRolePlayButton
+
+	MyRolePlayButton:SetNormalTexture("Interface\\Icons\\INV_Misc_Book_07")
+	MyRolePlayButton:SetHighlightTexture("")
+	MyRolePlayButton:SetPushedTexture("Interface\\Icons\\INV_Misc_Book_07")
+	MyRolePlayButton:GetNormalTexture():SetTexCoord(.08, .92, .08, .92)
+	MyRolePlayButton:GetPushedTexture():SetTexCoord(.08, .92, .08, .92)
+	F.CreateBG(MyRolePlayButton)
+
+	if FreeUI then
+		MyRolePlayButton:ClearAllPoints()
+		MyRolePlayButton:SetScript("OnShow", function(self)
+			self:SetPoint("LEFT", oUF_FreeTarget, "RIGHT", 5, 0)
+		end)
+
+		MyRolePlayButton:SetScript("OnClick", function(self, button)
+			if button == "LeftButton" then
+				mrp:Show(mrp:UnitNameWithRealm("target"))
+			end
+		end)
+	end
+end)
