@@ -88,11 +88,9 @@ hooksecurefunc(mrp, "CreateEditFrames", function()
 		bg:SetPoint("BOTTOMRIGHT", -18, 8)
 		F.CreateBD(bg, 0)
 
-		local tex = frame:CreateTexture(nil, "BACKGROUND")
+		local tex = F.CreateGradient(frame)
 		tex:SetPoint("TOPLEFT", 17, -5)
 		tex:SetPoint("BOTTOMRIGHT", -19, 9)
-		tex:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-		tex:SetGradientAlpha("VERTICAL", 0, 0, 0, .3, .35, .35, .35, .35)
 	end
 
 	F.ReskinScroll(MyRolePlayMultiEditFrameScrollFrameScrollBar)
