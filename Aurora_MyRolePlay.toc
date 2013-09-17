@@ -1,8 +1,8 @@
-## Interface: 50300
+## Interface: 50400
 ## Title: Aurora_MyRolePlay
 ## Notes: MyRolePlay plugin for Aurora and FreeUI.
 ## Author: Haleth/Freethinker
-## Version: 1.7
+## Version: 1.7.1
 ## RequiredDeps: MyRolePlay
 ## OptionalDeps: FreeUI
 
