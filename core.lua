@@ -8,7 +8,6 @@ hooksecurefunc(mrp, "CreateBrowseFrame", function()
 	bg:SetPoint("BOTTOMRIGHT")
 	bg:SetFrameLevel(MyRolePlayBrowseFrame:GetFrameLevel()-1)
 	F.CreateBD(bg)
-	F.CreateSD(bg)
 
 	MyRolePlayBrowseFrame:DisableDrawLayer("BACKGROUND")
 	MyRolePlayBrowseFrame:DisableDrawLayer("BORDER")
